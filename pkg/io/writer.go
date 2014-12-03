@@ -19,5 +19,5 @@ func (l *LimitedWriter) Write(data []byte) (n int, err error) {
 	}
 	n, err = l.W.Write(data)
 	l.N -= int64(n)
-	return
+	ret
 }
